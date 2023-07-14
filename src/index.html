@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <header>
+      <p class="top-head">spli</p>
+      <p class="bottom-head">tter</p>
+    </header>
+    <div class="calculator">
+      <div class="calculator-form">
+        <div class="bill-box">
+          <div class="wrap">
+            <label for="amount" class="bill">bill</label>
+            <p class="error">Can't be zero</p>
+          </div>
+          <input type="number" class="amount" placeholder="0" />
+        </div>
+        <div class="tip-box">
+          <label for="tip-percent" class="tip">Select Tip &percnt;</label>
+          <div class="tip-percent">
+            <button class="percent five">5&percnt;</button>
+            <button class="percent ten">10&percnt;</button>
+            <button class="percent fifteen">15&percnt;</button>
+            <button class="percent twenty">20&percnt;</button>
+            <button class="percent twenty-five">25&percnt;</button>
+            <input type="number" class="custom" placeholder="Custom" />
+          </div>
+        </div>
+        <div class="people-box">
+          <div class="wrap">
+            <label for="number-people" class="people">Number of People</label>
+            <p class="error">Can't be zero</p>
+          </div>
+          <input type="number" class="number-people" placeholder="0" />
+        </div>
+      </div>
+      <div class="calculator-display">
+        <div class="tip-amount-box">
+          <div class="box">
+            <p class="label">Tip Amount</p>
+            <p class="per-person">/ person</p>
+          </div>
+          <h2 class="tip-amount">0</h2>
+        </div>
+        <div class="total-amount-box">
+          <div class="box">
+            <p class="label">Total</p>
+            <p class="per-person">/ person</p>
+          </div>
+          <h2 class="total-amount">0</h2>
+        </div>
+        <button tpye="button" class="reset">reset</button>
+      </div>
+    </div>
+
+    <script src="/src/main.js"></script>
+  </body>
+</html>
